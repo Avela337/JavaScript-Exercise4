@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+</head>
+<body>
+    <h2>User registration form</h2>
+    <form action="https://formspree.io/f/xqenqyyz" method="POST">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+
+        <label for="last_name">Last Name</label><br>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+
+        <label for="Gender" name="gender" required ></label><br>
+        <select id="gender" name="gender" required>
+            <option value="" >Select...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="date_of_birth">Date of birth</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required><br><br>
+
+         <label for="email">Email</label><br>
+         <input type="email" id="email" name="email"><br><br>
+         <button type="submit">Submit registration</button>
+    </form>
+    <hr>
+    <h2>Search</h2>
+    <form action="https://formspree.io/f/xqenqyyz" method="POST">
+        <label for="search">Search by Name:</label>
+        <input type="text" id="search" name="search_name">
+        <input type="submit" value="Search">
+    </form>
+    
+</body>
+</html>

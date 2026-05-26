@@ -1,0 +1,58 @@
+/*General Spacing*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Arial', sans-serif;
+    padding-top: 70px;
+    line-height: 1.6;
+}
+
+/*Navigation Bar*/
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 15px;
+    z-index: 1000;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav {
+    color: white;
+    text-decoration: none;
+}
+/*Blog Post Styling*/
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.post{
+    margin-bottom: 20px;
+}
+/*Heading*/
+h1,h2{
+    color: #2c3e50;
+}
+h1{
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+}
+h2{
+    font-size: 20px;
+}
+/*Links*/
+a{
+    color: #3498db;
+    text-decoration: none;
+}
+a.hover{
+    text-decoration: underline;
+}

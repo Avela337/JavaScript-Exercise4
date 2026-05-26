@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+ 
+</head>
+<body class="bg-dark text-light d-flex flex-column min-vh-100">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-warning" href="index.html">All Lux</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active text-warning" href="products.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero py-5 text-center" data-aos="fade-down">
+    <div class="container py-3">
+      <p class="section-label mb-2">2026 Collection</p>
+      <h1 class="display-4 fw-light text-white">The Edit</h1>
+      <hr class="divider-gold w-25 mx-auto mt-3"/>
+      <p class="text-white-50 mt-3">Eight carefully curated pieces — each designed to outlast every trend.</p>
+    </div>
+  </div>
+
+  <!-- FILTER PILLS -->
+  <div class="container mt-4 mb-2 text-center" data-aos="fade-up">
+    <div class="d-flex flex-wrap justify-content-center gap-2">
+      <button class="btn btn-sm btn-outline-warning rounded-0 filter-btn active">All</button>
+      <button class="btn btn-sm btn-outline-secondary rounded-0 filter-btn">Tops</button>
+      <button class="btn btn-sm btn-outline-secondary rounded-0 filter-btn">Dresses</button>
+      <button class="btn btn-sm btn-outline-secondary rounded-0 filter-btn">Outerwear</button>
+      <button class="btn btn-sm btn-outline-secondary rounded-0 filter-btn">Accessories</button>
+    </div>
+  </div>
+
+  <!-- PRODUCTS GRID -->
+  <main class="container my-5 flex-grow-1">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+
+      <!-- Product 1 -->
+      <div class="col" data-aos="fade-up" data-aos-delay="0">
+        <div class="card product-card bg-black border-secondary h-100 text-white rounded-0">
+          <div class="position-relative">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&q=80" class="card-img-top" alt="Linen Blazer"/>
+            <span class="badge badge-gold position-absolute top-0 start-0 m-2 rounded-0">New</span>
+          </div>
+          <div class="card-body">
+            <p class="section-label mb-1">Outerwear</p>
+            <h5 class="card-title mb-1">The Linen Blazer</h5>
+            <div class="d-flex mb-2">
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-half text-warning small"></i>
+              <span class="text-white-50 small ms-2">(42)</span>
+            </div>
+            <p class="card-text text-white-50 small">A structured summer essential in 100% Italian linen.</p>
+            <p class="fw-bold text-warning mb-0">R2,499</p>
+          </div>
+          <div class="card-footer border-secondary bg-black pt-0">
+            <button class="btn btn-outline-warning w-100 rounded-0 mt-2"><i class="bi bi-bag-plus me-2"></i>Add to Bag</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col" data-aos="fade-up" data-aos-delay="75">
+        <div class="card product-card bg-black border-secondary h-100 text-white rounded-0">
+          <div class="position-relative">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80" class="card-img-top" alt="Silk Slip Dress"/>
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2 rounded-0">Sale</span>
+          </div>
+          <div class="card-body">
+            <p class="section-label mb-1">Dresses</p>
+            <h5 class="card-title mb-1">Silk Slip Dress</h5>
+            <div class="d-flex mb-2">
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <span class="text-white-50 small ms-2">(87)</span>
+            </div>
+            <p class="card-text text-white-50 small">Pure silk in four luminous shades — fluid and effortless.</p>
+            <p class="fw-bold text-warning mb-0"><s class="text-secondary me-2 fw-normal">R3,200</s>R2,099</p>
+          </div>
+          <div class="card-footer border-secondary bg-black pt-0">
+            <button class="btn btn-outline-warning w-100 rounded-0 mt-2"><i class="bi bi-bag-plus me-2"></i>Add to Bag</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col" data-aos="fade-up" data-aos-delay="150">
+        <div class="card product-card bg-black border-secondary h-100 text-white rounded-0">
+          <div class="position-relative">
+            <img src="https://images.unsplash.com/photo-1547949003-9792a18a2601?w=600&q=80" class="card-img-top" alt="Mini Leather Tote"/>
+            <span class="badge bg-secondary position-absolute top-0 start-0 m-2 rounded-0">Bestseller</span>
+          </div>
+          <div class="card-body">
+            <p class="section-label mb-1">Accessories</p>
+            <h5 class="card-title mb-1">Mini Leather Tote</h5>
+            <div class="d-flex mb-2">
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <span class="text-white-50 small ms-2">(116)</span>
+            </div>
+            <p class="card-text text-white-50 small">Hand-stitched Italian leather. Built to age beautifully.</p>
+            <p class="fw-bold text-warning mb-0">R4,750</p>
+          </div>
+          <div class="card-footer border-secondary bg-black pt-0">
+            <button class="btn btn-outline-warning w-100 rounded-0 mt-2"><i class="bi bi-bag-plus me-2"></i>Add to Bag</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col" data-aos="fade-up" data-aos-delay="225">
+        <div class="card product-card bg-black border-secondary h-100 text-white rounded-0">
+          <div class="position-relative">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.G-qab6YsynC5q1DkR62rmAHaJo?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Wide Leg Trousers"/>
+          </div>
+          <div class="card-body">
+            <p class="section-label mb-1">Bottoms</p>
+            <h5 class="card-title mb-1">Wide Leg Trousers</h5>
+            <div class="d-flex mb-2">
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star text-warning small"></i>
+              <span class="text-white-50 small ms-2">(33)</span>
+            </div>
+            <p class="card-text text-white-50 small">Tailored crepe in ivory and black — relaxed yet polished.</p>
+            <p class="fw-bold text-warning mb-0">R1,899</p>
+          </div>
+          <div class="card-footer border-secondary bg-black pt-0">
+            <button class="btn btn-outline-warning w-100 rounded-0 mt-2"><i class="bi bi-bag-plus me-2"></i>Add to Bag</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col" data-aos="fade-up" data-aos-delay="0">
+        <div class="card product-card bg-black border-secondary h-100 text-white rounded-0">
+          <div class="position-relative">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80" class="card-img-top" alt="Cashmere Wrap"/>
+            <span class="badge badge-gold position-absolute top-0 start-0 m-2 rounded-0">New</span>
+          </div>
+          <div class="card-body">
+            <p class="section-label mb-1">Accessories</p>
+            <h5 class="card-title mb-1">Cashmere Wrap</h5>
+            <div class="d-flex mb-2">
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-half text-warning small"></i>
+              <span class="text-white-50 small ms-2">(55)</span>
+            </div>
+            <p class="card-text text-white-50 small">Pure Mongolian cashmere — impossibly soft, forever chic.</p>
+            <p class="fw-bold text-warning mb-0">R3,100</p>
+          </div>
+          <div class="card-footer border-secondary bg-black pt-0">
+            <button class="btn btn-outline-warning w-100 rounded-0 mt-2"><i class="bi bi-bag-plus me-2"></i>Add to Bag</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col" data-aos="fade-up" data-aos-delay="75">
+        <div class="card product-card bg-black border-secondary h-100 text-white rounded-0">
+          <div class="position-relative">
+            <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=600&q=80" class="card-img-top" alt="Perfume"/>
+            <span class="badge bg-secondary position-absolute top-0 start-0 m-2 rounded-0">Limited</span>
+          </div>
+          <div class="card-body">
+            <p class="section-label mb-1">Fragrance</p>
+            <h5 class="card-title mb-1">Eau de Lumière</h5>
+            <div class="d-flex mb-2">
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <span class="text-white-50 small ms-2">(201)</span>
+            </div>
+            <p class="card-text text-white-50 small">Notes of amber, iris, and warm sandalwood. 50ml EDP.</p>
+            <p class="fw-bold text-warning mb-0">R1,650</p>
+          </div>
+          <div class="card-footer border-secondary bg-black pt-0">
+            <button class="btn btn-outline-warning w-100 rounded-0 mt-2"><i class="bi bi-bag-plus me-2"></i>Add to Bag</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="col" data-aos="fade-up" data-aos-delay="150">
+        <div class="card product-card bg-black border-secondary h-100 text-white rounded-0">
+          <div class="position-relative">
+            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600&q=80" class="card-img-top" alt="Silk Blouse"/>
+          </div>
+          <div class="card-body">
+            <p class="section-label mb-1">Tops</p>
+            <h5 class="card-title mb-1">Draped Silk Blouse</h5>
+            <div class="d-flex mb-2">
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star text-warning small"></i>
+              <span class="text-white-50 small ms-2">(27)</span>
+            </div>
+            <p class="card-text text-white-50 small">Asymmetric drape in ivory charmeuse — elegance made simple.</p>
+            <p class="fw-bold text-warning mb-0">R1,350</p>
+          </div>
+          <div class="card-footer border-secondary bg-black pt-0">
+            <button class="btn btn-outline-warning w-100 rounded-0 mt-2"><i class="bi bi-bag-plus me-2"></i>Add to Bag</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="col" data-aos="fade-up" data-aos-delay="225">
+        <div class="card product-card bg-black border-secondary h-100 text-white rounded-0">
+          <div class="position-relative">
+            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80" class="card-img-top" alt="Structured Bag"/>
+            <span class="badge badge-gold position-absolute top-0 start-0 m-2 rounded-0">New</span>
+          </div>
+          <div class="card-body">
+            <p class="section-label mb-1">Accessories</p>
+            <h5 class="card-title mb-1">Structured Day Bag</h5>
+            <div class="d-flex mb-2">
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-fill text-warning small"></i>
+              <i class="bi bi-star-half text-warning small"></i>
+              <span class="text-white-50 small ms-2">(64)</span>
+            </div>
+            <p class="card-text text-white-50 small">Clean architectural lines in full-grain pebbled leather.</p>
+            <p class="fw-bold text-warning mb-0">R5,900</p>
+          </div>
+          <div class="card-footer border-secondary bg-black pt-0">
+            <button class="btn btn-outline-warning w-100 rounded-0 mt-2"><i class="bi bi-bag-plus me-2"></i>Add to Bag</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-black border-top border-secondary py-5 mt-auto">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-md-4">
+          <h5 class="text-warning" style="font-family:'Cormorant Garamond',serif; letter-spacing:0.3em; font-size:1.6rem;">All Lux</h5>
+          <p class="text-white-50 small mt-2">Curated luxury for the modern individual. Crafted with intention, worn with confidence.</p>
+        </div>
+        <div class="col-md-2">
+          <p class="text-uppercase small text-white-50 mb-3">Navigate</p>
+          <ul class="list-unstyled small">
+            <li><a href="index.html" class="text-decoration-none" style="color:#c9a96e;">Home</a></li>
+            <li><a href="products.html" class="text-decoration-none" style="color:#c9a96e;">Shop</a></li>
+            <li><a href="about.html" class="text-decoration-none" style="color:#c9a96e;">About</a></li>
+            <li><a href="contact.html" class="text-decoration-none" style="color:#c9a96e;">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <p class="text-uppercase small text-white-50 mb-3">Help</p>
+          <ul class="list-unstyled small text-white-50">
+            <li>Shipping & Returns</li>
+            <li>Size Guide</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <p class="text-uppercase small text-white-50 mb-3">Follow Us</p>
+          <div class="d-flex gap-3">
+            <a href="#" style="color:#c9a96e; font-size:1.4rem;"><i class="bi bi-instagram"></i></a>
+            <a href="#" style="color:#c9a96e; font-size:1.4rem;"><i class="bi bi-pinterest"></i></a>
+            <a href="#" style="color:#c9a96e; font-size:1.4rem;"><i class="bi bi-tiktok"></i></a>
+            <a href="#" style="color:#c9a96e; font-size:1.4rem;"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary"/>
+      <p class="text-center text-white-50 small mb-0">© 2026 All Lux. All rights reserved. Crafted with care in South Africa.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 700, once: true, offset: 60 });</script>
+</body>
+</html>

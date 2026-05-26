@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Get in touch and book a session with us</h1>
+    </header>
+    <main>
+    <h2> Contact form</h2>
+    <form>
+        <label for="First Name">First Name:</label>
+        <input type="text" id="First Name" name="First Name" required><br><br>
+
+        <labe for="Last Name">Last Name:</labe>
+        <input type="text" id="Last Name" name="Last Name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="Phone number">Phone Number:</label>
+        <input type="number" id="Phone number" name="Phone number"><br><br>
+        <Select id="Gender" name="Gender" required>
+            <option value="">Select...</option>
+            <option value="male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+           
+        </Select><br><br>
+        <textarea placeholder="write your message" rows="5"></textarea>
+        <button type="submit">submit</button>
+        </form>
+        <!--Schedule table-->
+        <section id="Schedule">
+            <h2>Available appointment Times</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time Slot</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Monday</td><td>9:00 am - 10:00 am  </td><td>Available</td></tr>
+                    <tr><td>Tuesday</td><td>11:00 am - 12:00 am  </td><td>Booked</td></tr>
+                    <tr><td>Wednesday</td><td>1:00 am - 2:00 am  </td><td>Available</td></tr>
+                    <tr><td>Thursday</td><td>3:00 am - 4:00 am  </td><td>Available</td></tr>
+                    <tr><td>Friday</td><td>10:00 am - 11:00 am  </td><td>Booked</tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+
+    
+</body>
+</html>

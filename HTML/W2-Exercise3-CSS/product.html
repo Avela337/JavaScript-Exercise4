@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products Exercise3</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <div class="loader__spinner">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <p class="loader__text">Luxury Palace</p>
+      <div class="loader__bar"><div class="loader__fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="nav__logo-icon">✦</span>
+      <span class="nav__logo-text">All Lux</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#" class="nav__link">Collection</a></li>
+      <li><a href="#" class="nav__link">Design</a></li>
+      <li><a href="#" class="nav__link">Studio</a></li>
+      <li><a href="#" class="nav__link">Journal</a></li>
+    </ul>
+    <button class="nav__cta">Find Out more</button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+      <div class="hero__grid"></div>
+    </div>
+    <div class="hero__deco hero__deco--tl">◈</div>
+    <div class="hero__deco hero__deco--br">◈</div>
+    <div class="hero__skew-bar hero__skew-bar--left"></div>
+    <div class="hero__skew-bar hero__skew-bar--right"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">
+        <span class="hero__eyebrow-line"></span>
+        SS 2026 Collection
+        <span class="hero__eyebrow-line"></span>
+      </p>
+      <h1 class="hero__title">
+        <span class="hero__title-line">Objects</span>
+        <em class="hero__title-line hero__title-line--italic">of Desire</em>
+      </h1>
+      <p class="hero__subtitle">Twelve curated objects at the intersection of art, utility, and obsession.</p>
+      <div class="hero__actions">
+        <button class="btn btn--primary">Shop the Collection</button>
+        <button class="btn btn--ghost">View Lookbook</button>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat"><span class="hero__stat-num">06</span><span class="hero__stat-label">New Arrivals</span></div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat"><span class="hero__stat-num">∞</span><span class="hero__stat-label">Possibilities</span></div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat"><span class="hero__stat-num">01</span><span class="hero__stat-label">Vision</span></div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="products__header">
+      <span class="products__tag">— Featured Objects</span>
+      <h2 class="products__title">The Edit</h2>
+      <p class="products__desc">Each piece selected for its ability to transform the everyday into the extraordinary.</p>
+    </div>
+
+    <div class="products__grid">
+
+      <!-- Card 1 -->
+      <article class="card card--featured" style="--delay:0s">
+        <div class="card__media">
+            <img src="https://robots.net/wp-content/uploads/2023/11/which-wave-behavior-do-noise-cancelling-headphones-use-1700847062.jpg" alt="image">
+          <div class="card__image card__image--1"></div>
+          <div class="card__overlay">
+            
+            <button class="card__quick-add">Quick Add +</button>
+          </div>
+          <div class="card__badge">New</div>
+          <div class="card__icon card__icon--rotate">✦</div>
+        </div>
+        <div class="card__body">
+          <p class="card__category">Acoustics</p>
+          
+          <h3 class="card__name">Aether Pro Headphones</h3>
+          <p class="card__desc">Noise-cancelling perfection wrapped in hand-stitched leather.</p>
+          <div class="card__footer">
+            <span class="card__price">R5 600</span>
+            <button class="card__btn">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card" style="--delay:0.1s">
+        <div class="card__media">
+            <img src="https://guideline-products-production.imgix.net/images/284_127af080ed-107005-1-full.jpg?q=70&fit=clip&w=1024&fm=png&auto=compress" alt="image">
+          <div class="card__image card__image--2"></div>
+          <div class="card__overlay">
+            <button class="card__quick-add">Quick Add +</button>
+          </div>
+          <div class="card__badge card__badge--sale">−20%</div>
+          <div class="card__icon card__icon--rotate">◆</div>
+        </div>
+        <div class="card__body">
+          <p class="card__category">Optics</p>
+          <h3 class="card__name">Noir Polarised Frames</h3>
+          <p class="card__desc">Italian acetate. UV400. The last pair you'll ever need.</p>
+          <div class="card__footer">
+            <span class="card__price">R3 500 <s>R5 000</s></span>
+            <button class="card__btn">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card" style="--delay:0.2s">
+        <div class="card__media">
+            <img src="https://i.etsystatic.com/38334582/r/il/7534eb/5613910561/il_1588xN.5613910561_cfgj.jpg" alt="image">
+          <div class="card__image card__image--3"></div>
+          <div class="card__overlay">
+            <button class="card__quick-add">Quick Add +</button>
+          </div>
+          <div class="card__icon card__icon--rotate">◇</div>
+        </div>
+        <div class="card__body">
+          <p class="card__category">Timepieces</p>
+          <h3 class="card__name">Onyx Mechanical Watch</h3>
+          <p class="card__desc">Swiss movement in a 40mm polished ceramic case.</p>
+          <div class="card__footer">
+            <span class="card__price">R24 000</span>
+            <button class="card__btn">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card" style="--delay:0.3s">
+        <div class="card__media">
+            
+          <div class="card__image card__image--4"></div>
+          <div class="card__overlay">
+            <button class="card__quick-add">Quick Add +</button>
+          </div>
+          <div class="card__badge">Limited</div>
+          <div class="card__icon card__icon--rotate">○</div>
+        </div>
+        <div class="card__body">
+          <p class="card__category">Writing</p>
+          <h3 class="card__name">Obsidian Fountain Pen</h3>
+          <p class="card__desc">18k gold nib. Matte black resin. 50 units only.</p>
+          <div class="card__footer">
+            <span class="card__price">R4 500</span>
+            <button class="card__btn">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card" style="--delay:0.4s">
+        <div class="card__media">
+          <div class="card__image card__image--5"></div>
+          <div class="card__overlay">
+            <button class="card__quick-add">Quick Add +</button>
+          </div>
+          <div class="card__icon card__icon--rotate">▲</div>
+        </div>
+        <div class="card__body">
+          <p class="card__category">Carry</p>
+          <h3 class="card__name">Vanta Leather Wallet</h3>
+          <p class="card__desc">Full-grain vegetable tanned leather. Slim profile, endless capacity.</p>
+          <div class="card__footer">
+            <span class="card__price">R6 000</span>
+            <button class="card__btn">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="card" style="--delay:0.5s">
+        <div class="card__media">
+          <div class="card__image card__image--6"></div>
+          <div class="card__overlay">
+            <button class="card__quick-add">Quick Add +</button>
+          </div>
+          <div class="card__badge card__badge--new">Just In</div>
+          <div class="card__icon card__icon--rotate">✧</div>
+        </div>
+        <div class="card__body">
+          <p class="card__category">Fragrance</p>
+          <h3 class="card__name">Solstice Eau de Parfum</h3>
+          <p class="card__desc">Cedarwood. Ambergris. Silence. 50ml artisan flacon.</p>
+          <div class="card__footer">
+            <span class="card__price">R7 600</span>
+            <button class="card__btn">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-banner__bg">
+      <div class="cta-banner__stripe"></div>
+      <div class="cta-banner__stripe"></div>
+      <div class="cta-banner__stripe"></div>
+    </div>
+    <div class="cta-banner__content">
+      <p class="cta-banner__pre">— Membership</p>
+      <h2 class="cta-banner__title">Join the Inner Circle</h2>
+      <p class="cta-banner__sub">Early access. Private drops. Free worldwide shipping. Always.</p>
+      <button class="btn btn--primary btn--pulse">Become a Member</button>
+    </div>
+    <div class="cta-banner__deco">All Lux</div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__logo">✦ All Lux</span>
+        <p>Objects that endure.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Shipping</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 All Lux. All rights reserved.</span>
+      <span class="footer__mono">v2.6.0 — SS26</span>
+    </div>
+  </footer>
+
+  <script>
+    // Remove loader after page load
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      setTimeout(() => {
+        loader.classList.add('loader--done');
+        setTimeout(() => loader.remove(), 800);
+      }, 1800);
+    });
+
+    // Nav scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('nav');
+      nav.classList.toggle('nav--scrolled', window.scrollY > 60);
+    });
+
+    // Intersection Observer for card slide-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('card--visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.card').forEach(card => observer.observe(card));
+
+    // Pause card animations on hover (animation-play-state demo)
+    document.querySelectorAll('.card__icon').forEach(icon => {
+      const card = icon.closest('.card');
+      card.addEventListener('mouseenter', () => {
+        icon.style.animationPlayState = 'paused';
+      });
+      card.addEventListener('mouseleave', () => {
+        icon.style.animationPlayState = 'running';
+      });
+    });
+  </script>
+
+</body>
+</html>
