@@ -8,15 +8,18 @@
 // }
 // else {    console.log("The color is not red, blue, or green");
 // }
-const vegetables = ["Lettuce", "tomato", "avocado", "carrot"];
-let found = false;
-for (let i = 0; i < vegetables.length; i++) {
-    console.log((i + 1)+"." +(vegetables[i]));
-    if (vegetables[i] === "avocado" || vegetables[i] === "carrot") {
-        console.log("found: " + vegetables[i]);
-        found = true;
-    }
-}
-if (!found) {
-    console.log("No avocado or carrot found.");
-}
+// const vegetables = ["Lettuce", "tomato", "avocado", "carrot"];
+// let found = false;
+// for (let i = 0; i < vegetables.length; i++) {
+//     console.log((i + 1)+"." +(vegetables[i]));
+//     if (vegetables[i] === "avocado" || vegetables[i] === "carrot") {
+//         console.log("found: " + vegetables[i]);
+//         found = true;
+//     }
+// }
+// if (!found) {
+//     console.log("No avocado or carrot found.");
+// }
+let age = 20;
+let text= (age<18) ? "You are a minor." : "You are an adult.";
+console.log(text);
